@@ -1,0 +1,34 @@
+.service{
+    margin: 2em 0;
+
+    .content{
+        background-color: transparent;
+        width: 100%;
+        position: relative;
+        z-index: 0;
+
+        .title{
+            position: absolute;
+            margin: 0;
+            bottom: 0;
+            z-index: 1;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1.125em;
+        }
+        
+        .image{
+            height: 9em;
+            background: var(--primary);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    .description{
+        color: var(--primary);
+        text-align: center;
+    }
+}

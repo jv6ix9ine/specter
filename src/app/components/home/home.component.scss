@@ -1,0 +1,107 @@
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background-image: url(/assets/images/home/banner.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 140px;
+        width: 100%;
+        position: relative;
+
+        img{
+            position: absolute;
+            width: auto;
+            height: 100%;
+            bottom: -25%;
+        }
+    }
+
+    .content{
+        width: 100%;
+        height: 240px;
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 1em;
+        clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0, 50% 40%);
+        position: relative;
+
+        .bar-left, .bar-right{
+            background-color: var(--primary);
+            height: 8px;
+            width: 60%;
+            position: absolute;
+            z-index: 0;
+        }
+
+        .bar-left{
+            left: -5%;
+            top: 24%;
+            transform: rotate(27deg);
+        }
+
+        .bar-right{
+            right: -5%;
+            top: 24%;
+            transform: rotate(153deg);
+        }
+
+        .square{
+            background-color: var(--white);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 1;
+
+            .title{
+                font-family: 'Nexa Bold';
+                color: var(--primary);
+                font-size: 1.5em;
+                text-align: center;
+            }
+    
+            p{
+                margin: 0.5em 0;
+                font-size: 1.125em;
+                text-align: center;
+            }
+    
+            button{
+                background-color: var(--primary);
+                color: white;
+                border-radius: 0 0 16px 16px;
+                width: 10em;
+                font-size: 1.125em;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 375px) {
+    section{
+        .content{
+            height: 260px;
+            .square{
+                .title{
+                    font-size: 2em;
+                }
+
+                p, button{
+                    font-size: 1.375em;
+                }
+            }
+        }
+    }
+}

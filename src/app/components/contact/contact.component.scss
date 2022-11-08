@@ -1,0 +1,52 @@
+@import "/src/assets/presets/form-styles.scss";
+
+section{
+    .map{
+        background-color: #28378030;
+        margin: 2em 0;
+        .map-container{
+            iframe{
+                margin: 1em 0;
+                height: 13em;
+                width: 100%;
+                border: 0;
+            }
+        }
+    }
+
+    .social{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1em;
+
+        a{
+            height: 1.75em;
+            width: 1.75em;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .contact-form{
+        form{
+            .btn{
+                width: 100%;
+                display: flex;
+                margin: 1em 0;
+                button{
+                    margin: 0 auto;
+                    background-color: var(--primary);
+                    color: white;
+                    border-radius: 0 0 16px 16px;
+                    width: 10em;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

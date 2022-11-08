@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "specter-2a0a5"
+  },
+  "targets": {
+    "specter-2a0a5": {
+      "hosting": {
+        "web": [
+          "specter-site"
+        ]
+      }
+    }
+  }
+}

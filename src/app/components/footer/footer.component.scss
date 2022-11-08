@@ -1,0 +1,23 @@
+section{
+    height: 70px;
+    background-color: var(--primary);
+
+    footer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            height: 50px;
+        }
+
+        .copyright{
+            color: var(--white);
+            font-weight: bold;
+            font-size: 14px;
+            // font-family: 'Nexa Bold';
+        }
+    }
+}

@@ -1,0 +1,98 @@
+@import "/src/assets/presets/services.scss";
+
+section{
+    
+    .accounting{
+        .title{
+            left: 1em;
+        }
+        .image{
+            clip-path: polygon(0% 0%, 0 80%, 8.75em 80%, 10em 100%, 100% 100%, 100% 0);
+        }
+    }
+    
+    .management{
+        .title{
+            right: 1em;
+        }
+        .image{
+            clip-path: polygon(0 0, 0 100%, calc(100% - 10.313em) 100%, calc(100% - 9.375em) 80%, 100% 80%, 100% 0);
+        }
+    }
+
+    .fiscal{
+        .title{
+            left: 1em;
+        }
+        .image{
+            clip-path: polygon(0% 0%, 0 80%, 6.875em 80%, 7.813em 100%, 100% 100%, 100% 0);
+        }
+    }
+
+    .deliverable{
+        .title{
+            right: 1em;
+        }
+        .image{
+            clip-path: polygon(0 0, 0 100%, calc(100% - 9.688em) 100%, calc(100% - 8.75em) 80%, 100% 80%, 100% 0);
+        }
+    }
+
+    .discipline{
+        .title{
+            left: 1em;
+        }
+        .image{
+            clip-path: polygon(0% 0%, 0 80%, 12.813em 80%, 13.75em 100%, 100% 100%, 100% 0);
+        }
+    }
+
+
+    .building{
+        .title{
+            right: 1em;
+        }
+        .image{
+            clip-path: polygon(0 0, 0 100%, calc(100% - 15.938em) 100%, calc(100% - 15em) 80%, 100% 80%, 100% 0);
+        }
+    }
+
+    .payroll{
+        .title{
+            left: 1em;
+        }
+        .image{
+            clip-path: polygon(0% 0%, 0 80%, 6.875em 80%, 7.813em 100%, 100% 100%, 100% 0);
+        }
+    }
+
+    .defense{
+        .title{
+            right: 1em;
+        }
+        .image{
+            clip-path: polygon(0 0, 0 100%, calc(100% - 10.313em) 100%, calc(100% - 9.375em) 80%, 100% 80%, 100% 0);
+        }
+    }
+
+    .training{
+        .title{
+            left: 1em;
+            width: 290px;
+        }
+        .image{
+            clip-path: polygon(0% 0%, 0 65%, 16.563em 65%, 17.5em 100%, 100% 100%, 100% 0);
+            height: 11em !important;
+        }
+
+        @media screen and (min-width: 375px){
+            .title{
+                width: auto !important;
+            }
+            .image{
+                height: 9em !important;
+                clip-path: polygon(0% 0%, 0 80%, 20.625em 80%, 21.563em 100%, 100% 100%, 100% 0);
+            }
+        }
+    }
+}

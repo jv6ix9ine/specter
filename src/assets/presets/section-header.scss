@@ -1,0 +1,27 @@
+.section-header{
+    position: relative;
+    height: 3.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .left-bar{
+        border-top: 0.25em solid var(--primary);
+        border-bottom: 0.25em solid var(--primary);
+        background-color: var(--primary);
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .right-bar{
+        border-top: 0.25em solid var(--primary);
+        border-bottom: 0.25em solid var(--primary);
+        background-color: var(--primary);
+        width: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,24 @@
+<section id="value-added">
+    <div class="section-header">
+        <div class="left-bar"></div>
+        <h1 class="titles">Valor agregado</h1>
+        <div class="right-bar"></div>
+    </div>
+
+    <ng-container *ngFor="let value of addedValues" >
+
+        <div class="value">
+            <div class="{{value.class}}">
+                <p class="title">{{value.title}}</p>
+                <div class="clip-path">
+                    <p class="description">{{value.description}}</p>
+                </div>
+            </div>
+            <div class="image">
+                <img src="{{value.image}}" alt="">
+            </div>
+        </div>
+
+    </ng-container>
+
+</section>

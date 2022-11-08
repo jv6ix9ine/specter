@@ -1,0 +1,43 @@
+@import "/src/assets/presets/added-values.scss";
+
+section{
+    .header{
+        .right{
+            height: 4em !important;
+        }
+    }
+
+    .carousel{
+        margin-bottom: 2em;
+        .testimonial{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .photo{
+                width: 5em;
+                height: 5.625em;
+                clip-path: polygon(50% 0%, 0 25%, 0 75%, 50% 100%, 100% 75%, 100% 25%);
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .name{
+                color: var(--primary);
+                font-weight: bold;
+                font-size: 1.125em;
+            }
+
+            .description{
+                text-align: center;
+                margin: 0;
+                padding: 1em;
+                color: var(--primary);
+            }
+        }
+    }
+}

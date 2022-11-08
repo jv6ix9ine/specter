@@ -1,0 +1,21 @@
+<section>
+    <div class="section-header" id="services">
+        <div class="left-bar"></div>
+        <h1 class="titles">Servicios</h1>
+        <div class="right-bar"></div>
+    </div>
+
+    <ng-container *ngFor="let service of services">
+        <div class="{{service.class}} service">
+            <div class="content">
+                <p class="title">{{service.title}}</p>
+                <div class="image" [ngStyle]="{ 'background-image' : 'url('+ service.image +')' }" ></div>
+                <!-- <div class="image" [ngStyle]="{ 'background-color' : 'var(--primary)' }" ></div> -->
+            </div>
+            <p class="description container">
+                {{service.description}}
+            </p>
+        </div>
+    </ng-container>
+
+</section>

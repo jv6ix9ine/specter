@@ -1,0 +1,48 @@
+<section class="header" [ngClass]="scrollFlag">
+    <nav class="container" [ngClass]="showLogo">
+        <a href="javascript:void(0)" class="logo" (click)="goTo('home', $event)">
+            <img  src="assets/images/specter-logo.png" alt="">
+        </a>
+        <a href="javascript:void(0)" class="menu" (click)=" toggleMenu()">
+            <img src="{{menuIcon}}" alt="Menu">
+        </a>
+    </nav>
+</section>
+
+<nav class="sidebar" [ngClass]="{ 'open-menu': menu }" >
+    <div class="sidebar-header">
+        <a href="" class="logo" (click)=" toggleMenu()">
+            <img src="assets/images/specter-logo-blue.png" alt="Specter logo">
+        </a>
+
+        <button mat-icon-button class="close" (click)=" toggleMenu()">
+            <mat-icon>close</mat-icon>
+        </button> 
+    </div>
+  
+    <div class="options">
+        <mat-selection-list  [multiple]="false" class="list">
+
+            <mat-list-option *ngFor="let item of menuOptions" [value]="item" [routerLink]="['']" (click)="goTo(item?.goTo, $event); toggleMenu()">
+              <mat-icon mat-list-icon>{{item.icon}}</mat-icon>
+              <div mat-line>{{item.name}}</div>
+            </mat-list-option>
+
+        </mat-selection-list>
+    </div>
+    
+    <mat-divider></mat-divider>
+
+    <p class="container">Contacto:</p>
+
+    <div class="contact">
+        <a href="" target="_blank"><img src="assets/icons/whatsapp.png" alt=""></a>
+        <a href="" target="_blank"><img src="assets/icons/mail.png" alt=""></a>
+        <a href="" target="_blank"><img src="assets/icons/facebook.png" alt=""></a>
+        <a href="" target="_blank"><img src="assets/icons/twitter.png" alt=""></a>
+    </div>
+
+    <!-- <div class="sidebar-footer"> -->
+        <!-- <p>© 2022 Specter. All rights reserved</p> -->
+    <!-- </div> -->
+  </nav>
